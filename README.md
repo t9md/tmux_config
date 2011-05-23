@@ -11,6 +11,7 @@ Most of lines are commented out, I keep these unused config un-delete for refere
 Emulate two step key-bind(which GNU screen provided as `bind -c class`).
 Currently 2-step kebind only for pasting some string.
 try
+
     mkdir ~/.tmux/
     echo 'register :key => "C-p", :string => "ABC"' >> ~/.tmux/paster.conf
     echo 'register :key => "j", :string => "DEF"' >> ~/.tmux/paster.conf
