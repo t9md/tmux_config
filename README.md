@@ -39,6 +39,6 @@ pane を 好きな方向に移動する機能を実現している。
       fi
     }
 
-## Other interesting Procect
+## Other interesting Project
 * [tmux-ruby](https://github.com/dominikh/tmux-ruby)
 * [tmuxinator](https://github.com/aziz/tmuxinator)
