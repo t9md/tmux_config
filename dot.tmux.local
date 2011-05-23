@@ -1,0 +1,3 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=1:
+bind-key -n C-j send-keys "SecretCommand" C-m
+
