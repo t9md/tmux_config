@@ -28,6 +28,15 @@ provide MOVE pane any direction you want.
 pane を 好きな方向に移動する機能を実現している。
 
 ## Useful shell function for Shell
+you can change `default-path` easily with `tcd` command.
+
+cd /var/tmp and set `default-path` to /var/tmp
+    tcd /var/tmp
+
+set `default-path` to current directory
+    tcd<Enter>
+
+add following fragment to ~/.zshrc
 
     function tcd(){
       if [ -z $1 ]; then
@@ -38,6 +47,24 @@ pane を 好きな方向に移動する機能を実現している。
         fi
       fi
     }
+
+try then understand how it work
+    cd ~
+    tmux 
+    tcd /var/tmp
+    tmux split-window
+    tcd /etc
+    tmux split-window
+
+## Mac user CMD key as META
+My setting use `<M-` prefixed keybinding heavily.
+For Mac user, I reccoment user CMD key as META(`<M->`) key.
+I used to Mac and iTerm 6th months ago.
+When I used Mac, I set CMD key as `META` key.
+It required patch the src and build with Xcode.
+But know It seem to easier than ever.
+
+http://d.hatena.ne.jp/a_bicky/20110205/1296877645
 
 ## Other interesting Project
 * [tmux-ruby](https://github.com/dominikh/tmux-ruby)
