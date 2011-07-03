@@ -36,17 +36,19 @@ cd /var/tmp and set `default-path` to /var/tmp
 set `default-path` to current directory
     tcd<Enter>
 
-add following fragment to ~/.zshrc
+add following fragment to `~/.zshrc` or `~/.bashrc`
 
     function tcd(){
       if [ -z $1 ]; then
+        tmux set default-path $HOME
+      elif [ "$1" = '.' ]; then
         tmux set default-path $PWD
       else
         if [ -d $1 ]; then
           cd $1 && tmux set default-path $1
         fi
       fi
-    }
+    } 
 
 try then understand how it work
     cd ~
